@@ -15,5 +15,9 @@ Tasks are managed within [Trello-board](https://trello.com/b/V0wZGYbZ/audition-s
 
 ## Deployments
 
-We are using Heroku as our [staging server](https://sirius-beauty.herokuapp.com/).
+We are using Heroku as our [staging server](https://sirius-beautybot.herokuapp.com/).
 To deploy latest version you need to push latest changes to `master` branch.
+
+## Code style
+
+We are using eslint to ensure consisten code-style. We also have [pre-commit](https://github.com/observing/pre-commit) to make sure all the code gets validated before commit.

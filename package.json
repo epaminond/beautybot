@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": ">=8.0.0"
+    "node": "8.x",
+    "npm": "5.x"
   },
   "dependencies": {
     "botpress": "0.x",

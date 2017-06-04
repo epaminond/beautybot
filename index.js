@@ -20,4 +20,13 @@ module.exports = function(bp) {
                                             The price is $${service.price}.`)
     })
   })
+
+  bp.hear(/\bbye\b/i, (event, next) => {
+    bp.messenger.sendText(event.user.id, 'See you! :)')
+  })
+
+  bp.hear(/.+/, (event, next) => {
+    if(event.type !== 'message') { return }
+    bp.messenger.sendText(event.user.id, 'Sorry, I didn\'t quite get you.')
+  })
 }

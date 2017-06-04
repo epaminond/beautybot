@@ -46,3 +46,6 @@ jspm_packages
 # *** Botpress specifics ***
 /data
 /modules_config
+
+# Database-connection settings
+postgres.js

@@ -1,3 +1,16 @@
+const fs = require('fs');
+
+const defaultPostgresSettings = {
+  enabled: true,
+  host: process.env.PG_HOST || '127.0.0.1',
+  port: process.env.PG_PORT || 5432,
+  user: process.env.PG_USER || '',
+  password: process.env.PG_PASSWORD || '',
+  database: process.env.PG_DB || '',
+  ssl: process.env.PG_SSL || false
+}
+const postgres = fs.existsSync('./postgres.js') ? require('./postgres.js') : defaultPostgresSettings
+
 module.exports = {
 
   /**
@@ -33,15 +46,7 @@ module.exports = {
   /**
   * Postgres configuration
   */
-  postgres: {
-    enabled: process.env.DATABASE === 'postgres',
-    host: process.env.PG_HOST || '127.0.0.1',
-    port: process.env.PG_PORT || 5432,
-    user: process.env.PG_USER || '',
-    password: process.env.PG_PASSWORD || '',
-    database: process.env.PG_DB || '',
-    ssl: process.env.PG_SSL || false
-  },
+  postgres,
 
   /**
   * License configuration

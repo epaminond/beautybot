@@ -4,7 +4,7 @@ This is a test-app, created on top of [Botpress](https://github.com/botpress/bot
 
 Tasks are managed within [Trello-board](https://trello.com/b/V0wZGYbZ/audition-sirius.ai).
 
-Running app locally:
+## Running app locally
 
 1. Make sure to have node installed
 2. Make sure you have Postgres >=9.5 installed and running
@@ -12,3 +12,8 @@ Running app locally:
 4. Create postgres.js configuration file based on template: `cp postgres.js.example postgres.js`
 4. You can now start application via `botpress start`
 5. [Configure Messenger connection settings](https://github.com/botpress/botpress-examples/tree/master/hello-world-bot#6-configure-messenger-connection-settings)
+
+## Deployments
+
+We are using Heroku as our [staging server](https://sirius-beauty.herokuapp.com/).
+To deploy latest version you need to push latest changes to `master` branch.

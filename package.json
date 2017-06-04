@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "dependencies": {
     "botpress": "0.x",
     "botpress-messenger": "^2.1.1"

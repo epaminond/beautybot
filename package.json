@@ -9,8 +9,18 @@
   },
   "scripts": {
     "start": "botpress start",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore --ext .js ./"
+  },
+  "pre-commit": {
+    "run": "lint",
+    "silent": true
   },
   "author": "epaminond",
-  "license": "Botpress Proprietary License"
+  "license": "Botpress Proprietary License",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "pre-commit": "^1.2.2"
+  }
 }

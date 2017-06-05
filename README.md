@@ -15,8 +15,11 @@ Tasks are managed within [Trello-board](https://trello.com/b/V0wZGYbZ/audition-s
 
 ## Deployments
 
-We are using Heroku as our [staging server](https://sirius-beautybot.herokuapp.com/).
-To deploy latest version you need to push latest changes to `master` branch.
+We are using Heroku as our [staging server](https://siriusai-beautybot.herokuapp.com/).
+
+To deploy latest version you need to:
+1. Add heroku remote `heroku git:remote -a siriusai-beautybot`
+2. run `git push heroku master`.
 
 ## Code style
 

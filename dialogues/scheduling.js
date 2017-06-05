@@ -86,7 +86,6 @@ module.exports = bp => {
   // Cancel event
   bp.hear(/.*cancel.*/i, (event, next) => {
     const txt = txt => bp.messenger.createText(event.user.id, txt)
-    console.log('1111111111111111111111111111111')
 
     bp.convo.start(event, convo => {
       bp.db.get()

@@ -9,9 +9,9 @@ module.exports = bp => {
   Object.values(services).map(service => {
     const match = new RegExp(`about ${service.name}|price of ${service.name}|${service.name} price`, 'i')
     bp.hear(match, (event, next) => {
-      bp.messenger.sendText(event.user.id, `We are doing ${service.name} pretty good.
-                                            ${service.description}.
-                                            The price is $${service.price}.`)
+      bp.messenger.sendText(event.user.id, `We are doing ${service.name} pretty good.`
+                                            + `${service.description}.`
+                                            + `The price is $${service.price}.`)
     })
   })
 

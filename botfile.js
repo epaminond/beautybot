@@ -2,9 +2,13 @@ const fs = require('fs')
 
 const defaultPostgresSettings = {
   enabled: true,
-  connection: process.env.PG_URL || process.env.DATABASE_URL || null
+  host: process.env.PG_HOST || '127.0.0.1',
+  port: process.env.PG_PORT || 5432,
+  user: process.env.PG_USER || '',
+  password: process.env.PG_PASSWORD || '',
+  database: process.env.PG_DB || '',
+  ssl: process.env.PG_SSL || false
 }
-
 const postgres = fs.existsSync('./postgres.json') ? require('./postgres') : defaultPostgresSettings
 
 module.exports = {

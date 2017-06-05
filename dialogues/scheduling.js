@@ -6,8 +6,7 @@ const stringifyEvents = events => {
 }
 const createTimeThread = (convo, txt) => {
   convo.createThread('time')
-  const whatTime = 'What date and time would you like to schedule for?\
-                    Type smth like 2017-06-20 13:00'
+  const whatTime = 'What date and time would you like to schedule for? Type smth like 2017-06-20 13:00'
   convo.threads['time'].addQuestion(txt(whatTime), [
     {
       pattern: new RegExp('\\d\\d\\d\\d-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01]) '

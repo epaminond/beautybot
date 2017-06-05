@@ -48,4 +48,4 @@ jspm_packages
 /modules_config
 
 # Database-connection settings
-postgres.js
+postgres.json

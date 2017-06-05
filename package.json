@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "botpress": "0.x",
-    "botpress-messenger": "^2.1.1"
+    "botpress-messenger": "^2.1.2"
   },
   "scripts": {
     "start": "botpress start",

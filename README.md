@@ -8,7 +8,7 @@ Tasks are managed within [Trello-board](https://trello.com/b/V0wZGYbZ/audition-s
 
 1. Make sure to have node installed
 2. Make sure you have Postgres >=9.5 installed and running
-3. Create Postgres-database like this: `sudo -u postgres psql postgres -c "CREATE DATABASE sirius-beauty WITH ENCODING 'UTF8'"`, where `sirius-beauty` is database name and `postgres` - your Postgres superuser
+3. Create Postgres-database like this: `sudo -u postgres psql postgres -c "CREATE DATABASE sirius-beauty WITH ENCODING 'UTF8'"`, where `sirius_beauty` is database name and `postgres` - your Postgres superuser
 4. Create postgres.js configuration file based on template: `cp postgres.js.example postgres.js`
 4. You can now start application via `botpress start`
 5. [Configure Messenger connection settings](https://github.com/botpress/botpress-examples/tree/master/hello-world-bot#6-configure-messenger-connection-settings)

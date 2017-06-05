@@ -9,7 +9,7 @@ const defaultPostgresSettings = {
   database: process.env.PG_DB || '',
   ssl: process.env.PG_SSL || false
 }
-const postgres = fs.existsSync('./postgres.js') ? require('./postgres.js') : defaultPostgresSettings
+const postgres = fs.existsSync('./postgres.json') ? require('./postgres') : defaultPostgresSettings
 
 module.exports = {
 
